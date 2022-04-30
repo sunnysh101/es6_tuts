@@ -9,11 +9,11 @@ const files = {
 
 // JS task
 function jsTask() {
-  return src("src/app.js")
+  return src(files.jsPath)
     .pipe(babel({
       presets: ["@babel/preset-env"]
     }))
-    .pipe(dest("./public"));
+    .pipe(dest(files.jsOutputPath));
 }
 // Watch task
 function watchTask(){
