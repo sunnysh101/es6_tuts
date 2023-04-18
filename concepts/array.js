@@ -55,10 +55,20 @@ console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 // The Array.from() method converts any array like object to an array
 
 
-// List of some ES6 array methods:
+// List of some ES6 array methods (These methods belong to the Array class itself):
+
 // Array.isArray() - Checks if the object is an array
+console.log(Array.isArray(arr)); // true
+
 // Array.from() - Creates a new array from an array like object
+console.log(Array.from(arr)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
 // Array.of() - Creates a new array from the arguments passed to it
+console.log(Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+// The rest of the array methods are as follows:
 // Array.prototype.concat() - Concatenates two or more arrays
 // Array.prototype.copyWithin() - Copies array elements within the array
 // Array.prototype.entries() - Returns a new Array Iterator object that contains the key/value pairs for each index in the array
