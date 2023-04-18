@@ -1,0 +1,9 @@
+Main topic: Array
+Using the following text of code create all possible Anki flashcards based on the following criteria:
+(1) include syntax if relevant
+(2) Keep the answers relevant to the main topic and short
+
+
+
+
+
