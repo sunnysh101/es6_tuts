@@ -10,18 +10,33 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-        let i = "I";
-        let love = "❤️";
-        let jsx = "jsx";
+        // Components are simply a JS function that return a JSX
+        function Header(props) {
+            console.log(props)
+            return (
+                <header>
+                    <h1>{props.name} labs</h1>
+                </header>
+            );
+        }
         
-        ReactDOM.render(
-            <ul>
-                <li>{i}</li>
-                <li>{love}</li>
-                <li>{jsx.toLocaleUpperCase()}</li>
-            </ul>,
-            document.getElementById("root")
-        );
+        function Main() {
+            return (
+                <main>
+                    <p>I serve good tests.</p>
+                </main>
+            );
+        }
+
+        function App() {
+            return(
+                <div>
+                    <Header name="Sunny's" />
+                    <Main />
+                </div>
+            )
+        }
+        ReactDOM.render(<App />, document.getElementById("root"));
     </script>
 
 </body>
