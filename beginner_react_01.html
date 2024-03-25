@@ -10,12 +10,15 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+        let i = "I";
+        let love = "❤️";
+        let jsx = "jsx";
         
         ReactDOM.render(
             <ul>
-                <li>I</li>
-                <li>love</li>
-                <li>JSX</li>
+                <li>{i}</li>
+                <li>{love}</li>
+                <li>{jsx.toLocaleUpperCase()}</li>
             </ul>,
             document.getElementById("root")
         );
